@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class PeterRabbitHops {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+        int startX = 3;
+        int startY = 4;
+        int horizontalDistance = Math.abs(x - startX);
+        int verticalDistance = Math.abs(y - startY);
+        int totalHops = horizontalDistance + verticalDistance;
+        System.out.println(totalHops);
+        scanner.close();
+    }
+}
