@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class FloatRounding {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float input = scanner.nextFloat();
+        int integerPart = (int) input;
+        int ceilValue = (int) Math.ceil(input);
+        int floorValue = (int) Math.floor(input);
+        System.out.println(integerPart);
+        System.out.println(ceilValue);
+        System.out.println(floorValue);
+        scanner.close();
+    }
+}
